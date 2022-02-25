@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: PWD@2
+- task: BASH@3
   displayName: PWD
   inputs:
     scriptType: ps
