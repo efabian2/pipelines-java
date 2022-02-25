@@ -25,4 +25,5 @@ steps:
     script: |
       echo Write your commands here
       pwd
-      echo Hello world
+      ls -lrth
+      echo Hello world this is Fabian
