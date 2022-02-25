@@ -20,3 +20,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: PWD@2
+  displayName: PWD
+  inputs:
+    scriptType: ps
+    scriptLocation: inlineScript
+    inlineScript: |
+      pwd
+      ls -lrth
