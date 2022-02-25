@@ -24,6 +24,10 @@ steps:
   inputs:
     script: |
       echo Write your commands here
+      echo this is the PWD command
       pwd
+      echo this is the ls command
       ls -lrth
       echo Hello world this is Fabian
+      echo Check if IP forwarding is enabled:
+      sudo sysctl -a |grep ip_forward
