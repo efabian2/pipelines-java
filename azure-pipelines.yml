@@ -20,11 +20,9 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: BASH@3
-  displayName: PWD
-  inputs:
-    scriptType: ps
-    scriptLocation: inlineScript
-    inlineScript: |
-      pwd
-      ls -lrth
+      - task: CmdLine@2
+        inputs:
+          script: |
+            echo Write your commands here
+            pwd
+            echo Hello world
